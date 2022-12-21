@@ -34,12 +34,13 @@ namespace lab14
         }
         public void gl_mod()
         {
-            root.gl_mod();
+            if (root.fib_checker() != 0)
+                root.gl_mod();
         }
         public int pr_level()
         {
             int lev = -1;
-            int[] pr_count = new int[root.depth_check()];
+            int[] pr_count = new int[root.depth_check()]; //массив уровней
             root.pr_level_searh(ref pr_count);
             for(int i = 0; i < pr_count.Length;i++)
             {

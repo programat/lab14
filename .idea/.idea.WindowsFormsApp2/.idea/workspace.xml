@@ -4,56 +4,22 @@
     <projectFile>WindowsFormsApp2/WindowsFormsApp2.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8ba1e0c-fd85-430e-afd2-5eb467967aac" name="Changes" comment="start commit">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WindowsFormsApp2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WindowsFormsApp2/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.lab14/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.lab14/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.lab14/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.lab14/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WindowsFormsApp2.sln.DotSettings.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14.sln.DotSettings.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/App.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/Form1.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/Form1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/Form1.resx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/Properties/AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/Properties/Resources.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/Properties/Resources.resx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/Properties/Settings.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/Properties/Settings.settings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/Tree.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/TreeNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/bin/Debug/lab14.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/bin/Debug/lab14.exe.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/bin/Debug/lab14.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/lab14.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/obj/Debug/WindowsFormsApp2.Form1.resources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/obj/Debug/WindowsFormsApp2.Properties.Resources.resources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/obj/Debug/WindowsFormsApp2.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/obj/Debug/WindowsFormsApp2.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/obj/Debug/WindowsFormsApp2.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/obj/Debug/WindowsFormsApp2.csproj.GenerateResource.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/obj/Debug/WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/obj/Debug/WindowsFormsApp2.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/obj/Debug/WindowsFormsApp2.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/obj/Debug/lab14.Form1.resources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/obj/Debug/lab14.Properties.Resources.resources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/obj/Debug/lab14.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/obj/Debug/lab14.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/obj/Debug/lab14.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/obj/Debug/lab14.csproj.GenerateResource.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/obj/Debug/lab14.csproj.SuggestedBindingRedirects.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/obj/Debug/lab14.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/obj/Debug/lab14.pdb" afterDir="false" />
+    <list default="true" id="e8ba1e0c-fd85-430e-afd2-5eb467967aac" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WindowsFormsApp2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WindowsFormsApp2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab14/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/lab14/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab14/TreeNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/lab14/TreeNode.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/lab14/Program.cs" root0="FORCE_HIGHLIGHTING" />
@@ -113,8 +79,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671578326091</updated>
-      <workItem from="1671578327371" duration="7170000" />
+      <workItem from="1671578327371" duration="8628000" />
     </task>
+    <task id="LOCAL-00001" summary="start commit">
+      <created>1671586058037</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671586058037</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,7 +107,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="fib_checker" />
                       </list>
                     </value>
                   </entry>

@@ -52,15 +52,38 @@ namespace lab14
             }
         }
 
-        public void gl_mod()
+        static bool isPerfectSquare(int x)
         {
-            if (this == null) { return;}
-            if ((Right != null) && (Left != null))
-            {
-                if (Right.num * Left.num < 0) { this.num = 0; }
+            int s = (int) Math.Sqrt(x);
+            return (s * s == x);
+        }
+ 
+        // Returns true if n is a
+        // Fibonacci Number, else false
+        static bool isFibonacci(int n)
+        {
+            // n is Fibonacci if one of
+            // 5*n*n + 4 or 5*n*n - 4 or
+            // both are a perfect square
+            return isPerfectSquare(5 * n * n + 4) ||
+                   isPerfectSquare(5 * n * n - 4);
+        }
+
+        public int fib_checker() //cheking all elements to be a fib elements: returns 1 if at least 1 exists
+        {
+            if ((Left == null) && (Right == null)) { return Convert.ToInt16(isFibonacci(this.num)); }
+            if (Right == null) { return Math.Max(Convert.ToInt16(isFibonacci(this.num)), Left.fib_checker()); }
+            if (Left == null) { return Math.Max(Convert.ToInt16(isFibonacci(this.num)), Right.fib_checker());  }
+            return Math.Max(Right.depth_check(), Left.depth_check());
+        }
+
+        public void gl_mod() //modify method
+        {
+            if (this.num < 0) { this.num *= -1; }
+            if (Right != null)
                 Right.gl_mod();
+            if (Left != null)
                 Left.gl_mod();
-            }
         }
         public int depth_check()
         {
@@ -69,7 +92,7 @@ namespace lab14
             if (Left == null) { return Right.depth_check(); }
             return Math.Max(Right.depth_check(), Left.depth_check());
         }
-        public int prime_lev_c(int lev)
+        public int prime_lev_c(int lev)  //метод проверки на простоту
         {
             if (level != lev) { return Left.prime_lev_c(lev) + Right.prime_lev_c(lev); }
             for (int i = 2; i < num / 2; i++)

@@ -14,13 +14,14 @@ namespace lab14
     public partial class Form1 : Form
     {
         Tree tr;    
-        Font draw_font = new Font("arrial", 10);
+        Font draw_font = new Font("Arial", 10);
         StringFormat drawFormat = new StringFormat();
         SolidBrush drawBrush = new SolidBrush(Color.Black);
         Pen draw_pen = new Pen(Color.Black, 1);
         public float len;
         public float heigh;
         string tr_str;
+        
         // FileInfo file = new FileInfo("C:/Users/minen/Desktop/учёба/индивидуалки по графам/ConsoleApp14/tree.res");
         public Form1()
         {
@@ -74,7 +75,7 @@ namespace lab14
             g.DrawString(Convert.ToString(cur.num), draw_font, drawBrush, centerx - 5, centery - 5, drawFormat);
         }
         
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e) //modify button
         {
             Graphics gr = Graphics.FromHwnd(pictureBox1.Handle);
             gr.Clear(Color.White);
@@ -84,7 +85,7 @@ namespace lab14
             display(draw_pen, depth, tr.root, gr, 1, len / 2.0F);
             status_upd();
         }
-        public void status_upd()
+        public void status_upd() //text results
         {
             if (tr.root == null) { Pr_level_box.Text = ""; Status_box.Text = ""; }
             if (tr.root.check_c()) { Status_box.Text = "This tree is a tree"; }
@@ -98,7 +99,7 @@ namespace lab14
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) //save button
         {
             // StreamWriter output = file.CreateText();
             // output.WriteLine(tr_str);
