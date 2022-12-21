@@ -127,8 +127,7 @@ namespace lab14
         public void pr_level_searh(ref int[] pr_ar)
         {
             bool flag = true;
-            for(int i = 2; i <= this.num / 2; i++) { if (this.num % i == 0) { flag = false;break; } }
-            if (flag==true) { pr_ar[this.level-1] += 1; }
+            pr_ar[this.level-1] += 1;
             if (this.Right != null) { this.Right.pr_level_searh(ref pr_ar); }
             if (this.Left != null) { this.Left.pr_level_searh(ref pr_ar); }
         }
