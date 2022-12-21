@@ -22,7 +22,7 @@ namespace lab14
         public float heigh;
         string tr_str;
         
-        // FileInfo file = new FileInfo("C:/Users/minen/Desktop/учёба/индивидуалки по графам/ConsoleApp14/tree.res");
+        FileInfo file = new FileInfo(@"tree.res");
         public Form1()
         {
             InitializeComponent();
@@ -101,9 +101,10 @@ namespace lab14
 
         private void button2_Click(object sender, EventArgs e) //save button
         {
-            // StreamWriter output = file.CreateText();
-            // output.WriteLine(tr_str);
-            // output.Close();
+            StreamWriter output = file.CreateText();
+            output.WriteLine(tr_str);
+            Pr_level_box.Text = "Successfully saved";
+            output.Close();
         }
     }
 }
