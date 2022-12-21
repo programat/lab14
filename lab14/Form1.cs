@@ -90,12 +90,12 @@ namespace lab14
             if (tr.root == null) { Pr_level_box.Text = ""; Status_box.Text = ""; }
             if (tr.root.check_c()) { Status_box.Text = "This tree is a tree"; }
             else { Status_box.Text = "this tree is not a tree"; }
-            int prime = tr.pr_level();
-            if (prime == -1) { Pr_level_box.Text = "No prime numbers\n in the tree"; }
+            int max_level = tr.pr_level();
+            if (max_level == -1) { Pr_level_box.Text = "Something\nwent wrong"; }
             else
             {
-                if (prime == -2) { Pr_level_box.Text = "Tree has multiple\nprime levels"; }
-                else { Pr_level_box.Text = "Prime level:\n" + prime; }
+                if (max_level == -2) { Pr_level_box.Text = "Tree has multiple\nmax levels"; }
+                else { Pr_level_box.Text = "Max level is \n" + max_level; }
             }
         }
 
