@@ -102,7 +102,19 @@ namespace lab14
         private void button2_Click(object sender, EventArgs e) //save button
         {
             StreamWriter output = file.CreateText();
-            output.WriteLine(tr_str);
+            if (tr.root.fib_checker() != 0) {
+                string[] tr_ar = tr_str.Split(' ');
+                string tr_new = "";
+                for (int i = 0; i < tr_ar.Length; i++) {
+                    if (tr_ar[i] != "")
+                        tr_ar[i] = Convert.ToString(Math.Abs(Convert.ToInt32(tr_ar[i])));
+                    tr_new += " " + tr_ar[i];
+                }
+                output.WriteLine(tr_new);
+            }
+            else {
+                output.WriteLine(tr_str);
+            }
             Pr_level_box.Text = "Successfully saved";
             output.Close();
         }
