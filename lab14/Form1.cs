@@ -20,9 +20,9 @@ namespace lab14
         Pen draw_pen = new Pen(Color.Black, 1);
         public float len;
         public float heigh;
-        string tr_str;
+        public string tr_str;
         
-        // FileInfo file = new FileInfo("C:/Users/minen/Desktop/учёба/индивидуалки по графам/ConsoleApp14/tree.res");
+        FileInfo file = new FileInfo(@"../../../tree.res");
         public Form1()
         {
             InitializeComponent();
@@ -77,13 +77,19 @@ namespace lab14
         
         private void button3_Click(object sender, EventArgs e) //modify button
         {
-            Graphics gr = Graphics.FromHwnd(pictureBox1.Handle);
-            gr.Clear(Color.White);
-            tr.gl_mod();
-            int depth = tr.root.depth_check();
-            if (depth == 0) { return; }
-            display(draw_pen, depth, tr.root, gr, 1, len / 2.0F);
-            status_upd();
+            try {
+                Graphics gr = Graphics.FromHwnd(pictureBox1.Handle);
+                gr.Clear(Color.White);
+                tr.gl_mod();
+                int depth = tr.root.depth_check();
+                if (depth == 0) {
+                    return;
+                }
+
+                display(draw_pen, depth, tr.root, gr, 1, len / 2.0F);
+                status_upd();
+            }
+            catch (FormatException) { Error_box.Visible = true; Pr_level_box.Text = ""; Status_box.Text = ""; }
         }
         public void status_upd() //text results
         {
@@ -101,9 +107,28 @@ namespace lab14
 
         private void button2_Click(object sender, EventArgs e) //save button
         {
-            // StreamWriter output = file.CreateText();
-            // output.WriteLine(tr_str);
-            // output.Close();
+            try {
+                StreamWriter output = file.CreateText();
+                if (tr.root.fib_checker() != 0) {
+                    string[] tr_ar = tr_str.Split(' ');
+                    string tr_new = "";
+                    for (int i = 0; i < tr_ar.Length; i++) {
+                        if (tr_ar[i] != "")
+                            tr_ar[i] = Convert.ToString(Math.Abs(Convert.ToInt32(tr_ar[i])));
+                        tr_new += " " + tr_ar[i];
+                    }
+
+                    output.WriteLine(tr_new);
+                }
+                else {
+                    output.WriteLine(tr_str);
+                }
+
+                Pr_level_box.Text = "Successfully saved";
+                output.Close();
+            }
+            catch (FormatException) { Error_box.Visible = true; Pr_level_box.Text = ""; Status_box.Text = ""; }
+            catch (Exception) { Error_box.Visible = true; Pr_level_box.Text = ""; Status_box.Text = ""; }
         }
     }
 }

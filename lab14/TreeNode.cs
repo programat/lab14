@@ -92,23 +92,6 @@ namespace lab14
             if (Left == null) { return Right.depth_check(); }
             return Math.Max(Right.depth_check(), Left.depth_check());
         }
-        public int prime_lev_c(int lev)  //метод проверки на простоту
-        {
-            if (level != lev) { return Left.prime_lev_c(lev) + Right.prime_lev_c(lev); }
-            for (int i = 2; i < num / 2; i++)
-            {
-                if (num % i == 0) { return 0; }
-            }
-            return 1;
-        }
-        public string print_l(int l)
-        {
-            if (this.level == l)
-            {
-                return Convert.ToString(this.num) + " ";
-            }
-            return (this.Left.print_l(l) + this.Right.print_l(l));
-        }
         public bool check_c()
         {
             if (this==null) { return true; }
